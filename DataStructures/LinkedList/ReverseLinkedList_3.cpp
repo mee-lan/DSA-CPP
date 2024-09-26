@@ -50,7 +50,8 @@ void Reverse(){
     previous= current; 
     current= next; //Not to be confused with next pointer of struct and local next pointer variable
     }
-    head=previous;
+
+    head=previous;// Dont make mistake of (head=current) as at last current will be NULL 
 }
 
 //Inserting at Nth position
