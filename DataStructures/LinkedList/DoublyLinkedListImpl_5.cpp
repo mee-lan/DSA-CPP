@@ -61,11 +61,12 @@ void insertAtHead(int data){
     node->data= data;
     node->next= head;
     node->prev = NULL;
-    //cout<<"Previous is:" <<head->prev;
+
+    
     if (head!=NULL) head->prev= node; //TAKE CARE OF THIS LINE!! wasted my 20 mins
     //At first insertion head is a null pointer so there is no such thing as head->prev
     //Hence should write the if condition
-
+    //cout<<"Previous is:" <<head->prev; //This wont work
     head=node;
 }
 
