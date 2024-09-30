@@ -3,6 +3,7 @@
 using namespace std;
 
 bool checkParenthesis(char* str){
+    
     stack<char> s;
     int i=0;
     while(str[i]!='\0'){
@@ -30,8 +31,6 @@ bool checkParenthesis(char* str){
     if (s.empty()) return true;
     else return false;
 }
-
-
 
 
 int main()
