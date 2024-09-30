@@ -35,7 +35,8 @@ int pop(){ //DEQUEUE OPERATION!
 
     //IF IT IS THE LAST ELEMENT!
     if (front==rear){
-        front==-1 && rear==-1;
+        front= -1;
+         rear =-1;
     }
     return value;
 }
@@ -46,7 +47,7 @@ bool isEmpty(){
 
 };
 
-void print(Queue &q){
+void print(Queue q){
     if (q.front!=-1){
     cout<<"QUEUE ELEMENTS:\n";
     
@@ -63,6 +64,7 @@ void print(Queue &q){
 }
 
 int main(){
+
     Queue q1;
     q1.push(1);
     q1.push(2);
@@ -81,7 +83,7 @@ int main(){
     q1.push(2);
     q1.push(3);
     q1.push(4);
-    
+
     print(q1);
     cout<<q1.isEmpty();
 }
