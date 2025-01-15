@@ -1,0 +1,10 @@
+# Ignore all files by default
+*
+
+#Dont ignore files with *.* and directories /
+!*.*
+
+!*/
+
+.vscode
+tempCodeRunnerFile.cpp
